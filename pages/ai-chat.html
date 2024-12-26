@@ -8,16 +8,34 @@
     <link rel="stylesheet" href="../css/chat.css">
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-messages">
-            <div class="message ai">
-                <p>Hello! I'm your AI assistant. How can I help you with your content today?</p>
+    <header>
+        <nav>
+            <div class="logo">Socical.ai</div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>AI Content Assistant</h2>
+                <p>Ask me about content ideas, trends, or brand strategy!</p>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai">
+                    <p>Hi! I'm your AI assistant. How can I help with your content strategy today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message (e.g., 'Give me content ideas')">
+                <button>Send</button>
             </div>
         </div>
-        <div class="chat-input">
-            <input type="text" placeholder="Type your message...">
-            <button>Send</button>
-        </div>
-    </div>
+    </main>
+
+    <script src="../js/chat.js"></script>
 </body>
 </html>
