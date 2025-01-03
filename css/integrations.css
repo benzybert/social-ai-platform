@@ -1,0 +1,100 @@
+.integrations-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.integration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.integration-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.integration-card:hover {
+    transform: translateY(-5px);
+}
+
+.integration-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.integration-header img {
+    width: 40px;
+    height: 40px;
+}
+
+.integration-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.integration-status {
+    margin-bottom: 1rem;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    background: #f0f0f0;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.status-badge.connected {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.integration-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.integration-features li {
+    padding: 0.5rem 0;
+    color: #555;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.integration-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+}
+
+.connect-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #1976d2;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.connect-btn:hover {
+    background: #1565c0;
+}
+
+.connect-btn.connected {
+    background: #4CAF50;
+} 
